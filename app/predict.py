@@ -7,8 +7,8 @@ import os
 
 from flask import Flask, render_template, request
 
-from app.train import DEFAULT_MODEL_PATH, DEFAULT_VECTORIZER_PATH, DEFAULT_MLB_PATH
-from app.classifier import Classifier
+from train import DEFAULT_MODEL_PATH, DEFAULT_VECTORIZER_PATH, DEFAULT_MLB_PATH
+from classifier import Classifier
 
 app = Flask(__name__)
 sys.path.append("./app")
