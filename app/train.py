@@ -13,7 +13,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.multiclass import OneVsRestClassifier
 from sklearn.linear_model import LogisticRegression
 
-from preprocessing import generate_preprocessed_train_X_y
+from app.preprocessing import generate_preprocessed_train_X_y
 
 sys.path.append("./app")
 
