@@ -13,10 +13,6 @@ import pandas as pd
 from sklearn.base import BaseEstimator, TransformerMixin
 
 
-train_data = pd.read_csv("../data/train.csv")
-test_data = pd.read_csv("../data/test.csv")
-
-
 class CleanTextPreprocessor(BaseEstimator, TransformerMixin):
     """Transformer object for text preprocessing."""
 

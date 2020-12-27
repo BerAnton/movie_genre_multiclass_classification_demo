@@ -3,7 +3,7 @@
 """Make genres prediction on given dialogue from movie"""
 
 import sys
-sys.path.append("../app")
+sys.path.append("./app")
 
 import os
 
