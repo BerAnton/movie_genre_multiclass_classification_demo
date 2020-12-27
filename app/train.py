@@ -1,6 +1,7 @@
 """Training process for dialogue genre classifier"""
 
 import os
+import sys
 from argparse import ArgumentParser
 
 import pandas as pd
@@ -10,7 +11,10 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.multiclass import OneVsRestClassifier
 from sklearn.linear_model import LogisticRegression
 
-from .preprocessing import generate_preprocessed_train_X_y
+from preprocessing import generate_preprocessed_train_X_y
+
+file_dir = os.path.dirname(__file__)
+sys.path.append(file_dir)
 
 DEFAULT_TRAIN_DATASET_PATH = "../data/train.csv"
 DEFAULT_TRAIN_FEATURES_PATH = "../data/preprocessed/train_features.csv"

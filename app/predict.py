@@ -1,12 +1,14 @@
 """Make genres prediction on given dialogue from movie"""
 
+import os
 import sys
 from flask import Flask, render_template, request
 
-from .train import DEFAULT_MODEL_PATH, DEFAULT_VECTORIZER_PATH, DEFAULT_MLB_PATH
-from .classifier import Classifier
+from train import DEFAULT_MODEL_PATH, DEFAULT_VECTORIZER_PATH, DEFAULT_MLB_PATH
+from classifier import Classifier
 
-sys.path.append('./app/')
+file_dir = os.path.dirname(__file__)
+sys.path.append(file_dir)
 
 app = Flask(__name__)
 
