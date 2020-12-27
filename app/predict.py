@@ -3,8 +3,6 @@
 """Make genres prediction on given dialogue from movie"""
 
 import sys
-sys.path.append("./app")
-
 import os
 
 from flask import Flask, render_template, request
@@ -13,6 +11,7 @@ from train import DEFAULT_MODEL_PATH, DEFAULT_VECTORIZER_PATH, DEFAULT_MLB_PATH
 from classifier import Classifier
 
 app = Flask(__name__)
+sys.path.append("./app")
 
 
 @app.route('/', methods=['POST', 'GET'])
