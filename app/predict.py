@@ -5,6 +5,7 @@
 import sys
 import os
 
+
 from flask import Flask, render_template, request
 
 from app.train import DEFAULT_MODEL_PATH, DEFAULT_VECTORIZER_PATH, DEFAULT_MLB_PATH
