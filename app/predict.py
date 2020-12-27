@@ -3,8 +3,8 @@
 import sys
 from flask import Flask, render_template, request
 
-from train import DEFAULT_MODEL_PATH, DEFAULT_VECTORIZER_PATH, DEFAULT_MLB_PATH
-from classifier import Classifier
+from .train import DEFAULT_MODEL_PATH, DEFAULT_VECTORIZER_PATH, DEFAULT_MLB_PATH
+from .classifier import Classifier
 
 sys.path.append('./app/')
 

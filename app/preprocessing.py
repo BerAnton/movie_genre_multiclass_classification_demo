@@ -8,7 +8,7 @@ import os
 import pandas as pd
 
 from sklearn.preprocessing import MultiLabelBinarizer
-from preprocessing_utility import CleanTextPreprocessor, GenresListPreprocessor
+from .preprocessing_utility import CleanTextPreprocessor, GenresListPreprocessor
 
 
 def generate_preprocessed_train_X_y(train_df: pd.DataFrame, filepath_features: str,
