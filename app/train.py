@@ -17,12 +17,12 @@ from .preprocessing import generate_preprocessed_train_X_y
 
 sys.path.append("./app")
 
-DEFAULT_TRAIN_DATASET_PATH = "../data/train.csv"
-DEFAULT_TRAIN_FEATURES_PATH = "../data/preprocessed/train_features.csv"
-DEFAULT_TRAIN_LABELS_PATH = "../data/preprocessed/train_labels.csv"
-DEFAULT_MODEL_PATH = "../model/model.pkl"
-DEFAULT_VECTORIZER_PATH = "../model/vectorizer.pkl"
-DEFAULT_MLB_PATH = "../model/multi_label_binarizer.pkl"
+DEFAULT_TRAIN_DATASET_PATH = "./data/train.csv"
+DEFAULT_TRAIN_FEATURES_PATH = "./data/preprocessed/train_features.csv"
+DEFAULT_TRAIN_LABELS_PATH = "./data/preprocessed/train_labels.csv"
+DEFAULT_MODEL_PATH = "./model/model.pkl"
+DEFAULT_VECTORIZER_PATH = "./model/vectorizer.pkl"
+DEFAULT_MLB_PATH = "./model/multi_label_binarizer.pkl"
 
 
 def train_model(model, train_X: pd.DataFrame, train_y: pd.DataFrame):
