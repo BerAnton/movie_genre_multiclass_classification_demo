@@ -9,7 +9,7 @@ def main():
                      DEFAULT_VECTORIZER_PATH, DEFAULT_MLB_PATH)
     dialogue = input()
     prediction = clf.predict(dialogue)
-    print(" ".join(prediction))
+    print(" ".join(sorted(prediction)))
 
 
 if __name__ == "__main__":
