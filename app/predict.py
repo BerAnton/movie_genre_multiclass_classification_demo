@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 """Make genres prediction on given dialogue from movie"""
 
 import os
