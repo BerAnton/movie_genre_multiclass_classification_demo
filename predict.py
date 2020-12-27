@@ -4,7 +4,7 @@ from train import DEFAULT_MODEL_PATH, DEFAULT_VECTORIZER_PATH, DEFAULT_MLB_PATH
 
 
 def main():
-    """Main function"""
+    """Попытка закомитить в ветку"""
     clf = Classifier(DEFAULT_MODEL_PATH,
                      DEFAULT_VECTORIZER_PATH, DEFAULT_MLB_PATH)
     dialogue = input()
