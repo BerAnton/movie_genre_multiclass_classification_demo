@@ -9,8 +9,7 @@ from flask import Flask, render_template, request
 from train import DEFAULT_MODEL_PATH, DEFAULT_VECTORIZER_PATH, DEFAULT_MLB_PATH
 from classifier import Classifier
 
-file_dir = os.path.dirname(__file__)
-sys.path.append(file_dir)
+sys.path.append("./app")
 
 app = Flask(__name__)
 
